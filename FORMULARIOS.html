@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Información del Cliente</legend>
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" name="usuario" id="usuario" maxlength="12"
+            placeholder="Usuario" size="12" title="Nombre de usuario"/><br/><br/>
+            
+            <label for="Nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" maxlength="25" placeholder="Nombre(s)"/><br/><br/>
+
+            <label for="Apellido Paterno">Apellido Paterno:</label>
+            <input type="text" name="ap" id="ap" maxlength="25" placeholder="Apellido Paterno"/><br/><br/>
+
+            <label for="Apellido Materno">Apellido Materno:</label>
+            <input type="text" name="am" id="am" maxlength="25" placeholder="Apellido Materno"/><br/><br/>
+
+            <label for="Contraseña">Contraseña:</label>
+            <input type="password" name="pass" id="pass" maxlength="20" placeholder="Ingresa la Contraseña" required><br/><br/>
+            
+            <label for="Sugerencias">Sugerencias:</label><br/><br/>
+            <textarea name="sugiere" id="sugiere" cols="30" rows="10"></textarea><br/><br/>
+
+            <label for="email">Correo Electronico:</label>
+            <input type="email" name="Correo" id="Correo" placeholder="Usuario@example.com" required><br/><br/>
+            
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" name="Fecha" id="Fecha" placeholder="Fecha de nacimiento"><br/><br/>
+
+            <label for="Hora">Hora de registro:</label>
+            <input type="time" name="hora" id="hora"/><br/><br/>
+
+            <label for="Buscar">Barra de búsqueda:</label>
+            <input type="search" name="buscar" id="buscar"/><br/><br/>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" id="telefono"><br/><br/>
+
+            <label for="sitio">Sitio Web:</label>
+            <input type="url" name="sitio" id="sitio"><br/><br/>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad"/><br/><br/>
+
+            <label for="rango">Califica el Servicio:</label>
+            <input type="range" name="rango" id="rango" min="1" max="10" value="7"><br/><br/>
+
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color"><br/><br/>
+
+            <label for="mes">Mes de nacimiento:</label>
+            <input type="month" name="mes" id="mes"><br/><br/>
+
+            <label for="semana">Semana:</label>
+            <input type="week" name="semana" id="semana"><br/><br/>
+
+            <label for="fecha-hora">Fecha y Hora:</label>
+            <input type="datetime" name="fecha-hora" id="fecha-hora"><br/><br/>
+
+            <label for="pago">Comprobante de pago</label>
+            <input type="file" name="pago" id="pago" value="1" required ><br/><br/>
+
+            <h3>Selecciona tus formas de pago preferidas</h3>
+            
+            <input type="checkbox" name="forma1" id="forma 1" value="tdc" checked>
+            <label for="forma1">Tarjeta de crédito</label><br/>          
+            
+            
+            <input type="checkbox" name="forma2" id="forma 2" value="efe">
+            <label for="forma2">Efectivo</label><br/>
+
+            
+            <input type="checkbox" name="forma3" id="forma 3" value="tdd">
+            <label for="forma3">Tarjeta de débito</label><br/><br/>
+
+            <h3>Indica tu género</h3>
+            <input type="radio" name="genero" id="genero" value="M">
+            <label for="genero">Masculino</label><br/>
+            <input type="radio" name="genero" id="genero" value="F">
+            <label for="genero">Femenino</label><br/><br/>
+
+            <h3>Preferencia de productos</h3>
+            <select name="productos" id="productos" multiple>
+                <optgroup label="ElectroDomesticos">
+                <option value="1" selected>Electrónica</option>
+                <option value="2" >Computadoras</option>
+                <option value="3" >Ferreteria</option>
+                <option value="4" >Linea blanca</option>
+                <option value="5" >Autos</option>
+                <option value="6">Ropa</option>
+                </optgroup>
+                <optgroup label="Comida"> 
+                <option value="7">Lácteos</option>
+                <option value="8">Abarrotes</option>
+            </optgroup>
+            </select><br/><br/>
+
+            <input type="submit" name="enviar" id="enviar" value="Enviar Formulario">
+
+            
+
+        </fieldset>
+    </form>
+</body>
+</html>
