@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinepolis</title>
+    <link rel="icon" type="image/jpg" href="Cinepolis/cinepolis_share.png"/>
+</head>
+<body>
+    <body style="background-image:url(Cinepolis/back3.jpg);"></body>
+    <nav align="left">
+    <img src="Cinepolis/cinepolis_share.png" alt="Logo Cinepolis" height="25px" width="25px">
+    </nav>
+    <h1 align="center">Cinepolis</h1>
+    <h2 align="center">Adquiere tus boletos</h2>
+    <form method="post" enctype="text/plain">
+        <fieldset>
+        <legend>Información del Cliente</legend>
+            <table align="center" style="width:1000px" style="height:50px">
+            <tbody>
+            <tr>
+        
+        <td>
+            <label for="Nombre">Nombre:</label></br>
+        <input type="text" name="Nombre" id="Nombre" placeholder="Nombre(s)" maxlength="18" size="15" required>
+    </td>
+
+        <td>
+            <label for="ApellidoP">Apellido Paterno:</label></br>
+        <input type="text" name="ApellidoP" id="ApellidoP" placeholder="Apellido Paterno" maxlength="18" size="15" required>
+    </td>
+
+        <td>
+            <label for="ApellidoM">Apellido Materno:</label></br>
+        <input type="text" name="ApellidoM" id="ApellidoM" placeholder="Apellido Materno" maxlength="18" size="15"required>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+            <label for="Email">E-Mail:</label></br>
+            <input type="email" name="correo" id="correo" placeholder="Ingresa tu Correo Electronico" size="22" required>
+        </td>
+            </tr>
+            </tbody>
+        </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información de Películas</legend>
+            <table align="center" style="width:1000px">
+                <tbody>
+                <tr>
+            <td>
+                <label for="boletos">Cantidad de Boletos:</label></br>
+                <input type="number" name="boletos" id="boletos" min="1" max="8">
+            </td>
+            <td>
+                <label for="peliculas">Peliculas:</label></br>
+                <select name="peliculas" id="peliculas" multiple>
+                    <optgroup label="Acción">
+                    <option value="1" >Aquaman 2</option>
+                    <option value="2" >Ant-Man: Quantumania</option>
+                    <option value="3" >Shazamn!</option>
+                    </optgroup>
+                    <optgroup label="Comedia">
+                    <option value="4" >Cocaine Bear</option>
+                    <option value="5" >Wonka</option>
+                    <option value="6">Barbie</option>
+                    </optgroup>
+                    <optgroup label="Drama"> 
+                    <option value="7">Creed 3</option>
+                    <option value="8">The Whale</option>
+                    <option value="9">Maestro</option>
+                    </optgroup>
+                    <optgroup label="Terror">
+                        <option value="10">The Boogeyman</option>
+                        <option value="11">Scream 6</option>
+                        <option value="12">La monja</option>
+                    </optgroup>
+                    <optgroup label="Animadas"></optgroup>
+                    <option value="13">Elemental</option>
+                    <option value="14">Mario Bros</option>
+                    <option value="15">Spider-Man</option>
+                </select>
+                <td>
+                    <label for="fecha">Fecha:</label><br/>
+                    <input type="date" name="fecha" id="fecha" placeholder="Fecha de Funcion"><br/>
+                    <label for="hora">Hora:</label><br/>
+                    <input type="time" name="hora" id="hora" placeholder="Hora de Funcion">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sucursal">Sucursal</label><br/>
+                    <input type="text" name="sucursal" id="sucursal" list="sucursales">
+                    <datalist id="sucursales">
+                    <option>Cinepolis: Plaza Sendero</option>
+                    <option>Cinepolis: Macro Plaza</option>
+                    <option>Cinepolis: El Dorado</option>
+                    <option>Cinepolis: Plaza Tangamanga</option>
+            </datalist><br/><br/>
+                </td>
+                <td>
+                    <label for="asiento">Asiento:</label></br>
+                    <input type="text" name="asiento" id="asiento" placeholder="X-NN" size="7">
+                </td>
+            </tr>
+        </tbody>
+        </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Método de pago</legend>
+            <table align="center" style="width:1000px">
+                <tbody>
+                <tr>
+            <td>
+                <label for="pago">Elige tu método de pago:</label><br/> 
+            <input type="checkbox" name="forma1" id="forma 1" value="tdc">
+            <label for="forma1">Tarjeta de crédito</label><br/>          
+            
+            
+            <input type="checkbox" name="forma2" id="forma 2" value="meb">
+            <label for="forma2">Membresía</label><br/>
+
+
+            <input type="checkbox" name="forma3" id="forma 3" value="tdd">
+            <label for="forma3">Tarjeta de débito</label><br/>
+            </td>
+            <td>
+                <label for="tarjeta">Ingresa el numero de Tarjeta o Membresía</label><br/>
+                <input type="number" name="tarjeta" id="tarjeta" placeholder="XXX-XXXX-XXX" required>
+            </td>
+            <td>
+                <label for="comp">Comprobante de Tarjeta</label><br/>
+                <input type="file" name="comp" id="comp" value="1" required ><br/><br/>
+            </td>
+        </tr>
+            <tr>
+                <td><label for="rango">Califica el Servicio:</label><br/>
+                    <input type="range" name="rango" id="rango" min="1" max="5" value="3"></td>
+            
+            <td><label for="Sugerencias">Sugerencias:</label><br/>
+                <textarea name="sugiere" id="sugiere" cols="25" rows="5"></textarea></td>
+                <td>
+            <input type="submit" name="enviar" id="enviar" value="Enviar datos"><br/>
+            <input type="reset" name="reiniciar" id="reiniciar" value="Borrar datos"><br/></td>
+                </td>
+            </tr>
+        </fieldset>
+
+</body>
+</html>
