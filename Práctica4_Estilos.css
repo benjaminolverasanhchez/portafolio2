@@ -1,0 +1,42 @@
+*{
+    text-align: left;
+    margin: 1%;
+    background-color: rgb(255, 186, 163);
+}
+h2{
+    color: blue;
+
+}
+#textos{
+    color: darkgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+}
+#small{
+    font-size: 18px;
+    text-align: justify;
+}
+p{
+    text-align: justify;
+}
+
+.texto2{
+    background-color: rgb(195, 255, 195);
+}
+blockquote{
+    background-color: rgb(195, 255, 195);
+    margin: 25px;
+    text-align: justify;
+}
+a{
+    background-color: rgb(195, 255, 195);
+}
+
+.texto3{
+    background-color: rgb(195, 255, 195);
+}
+
+.texto4{
+    background-color: rgb(195, 255, 195);
+}
