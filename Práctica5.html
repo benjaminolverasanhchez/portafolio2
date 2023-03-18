@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Internet_Práctica5-Estilos-Formularios</title>
+    <!--FUENTE EXTERNA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Práctica5_Estilos.css">
+</head>
+<body>
+    <h1>Servicios de Internet y Telefonía</h1>
+    <h2>Contrato de servicios</h2>
+    <fieldset>
+        <legend>Datos del Cliente</legend>
+        <table class="tabla1">
+            <tbody>
+                <tr>
+                    <td><label for="nombre">Nombre:</label><br/>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu Nombre(s)" maxlength="18" size="30" required></td>
+                    <td><label for="ApellidoP">Apellido Paterno:</label><br/>
+                    <input type="text" id="ApellidoP" name="ApellidoP" maxlength="18" placeholder="Ingresa tu Apellido Paterno" size="30" required></td>
+                    <td><label for="ApellidoM">Apellido Materno:</label><br/>
+                    <input type="text" id="ApellidoM" name="ApellidoM" maxlength="18" placeholder="Ingresa tu Apellido Materno" size="30" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tipo">Ciudad:</label><br/>
+                    <select name="ciudad" id="ciudad" multiple size="5">
+                    <option value="1">San Luís Potosí</option>
+                    <option value="2">Matehuala</option>
+                    <option value="3">Cd. Valles</option>
+                    <option value="4">Querétaro</option>
+                    <option value="5">Guanajuato</option></select></td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Servicio a Contratar</legend>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="servicio">Selecciona el tipo de servicio a contratar:</label><br/>
+                    <label for="linea">Linea Telefonica</label>
+                    <input type="checkbox" name="forma1" id="forma1" value="lt" checked></td>
+                    <td><label for="Internet">Servicio de Internet</label>
+                    <input type="checkbox" name="forma2" id="forma2" value="int" checked></td>
+                </tr>   
+            </tbody>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Forma de Pago</legend>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="formaP">Elije la forma de pago:</label> <br/>
+                    <label for="TDC">TDC:</label>
+                    <input type="radio" name="tdc" id="tdc" value="tdc"><br/>
+
+                    <label for="TDB">Tarjeta de Débito:</label>
+                    <input type="radio" name="tdb" id="tdb" value="tdb" checked><br/>
+
+                    <label for="PGE">Pago en Efectivo:</label>
+                    <input type="radio" name="pge" id="pge" value="pge"><br/>
+
+                    <label for="PMC">Pago mediante Cheque:</label>
+                    <input type="radio" name="pmc" id="pmc" value="pge"><br/>
+
+                    <label for="TRB">Transferencia bancaria:</label>
+                    <input type="radio" name="trb" id="trb" value="trb"><br/>
+
+                    <label for="DPB">Depósito bancario:</label>
+                    <input type="radio" name="dpb" id="dpb" value="dpb"><br/>
+
+                    <label for="OXXO">Pago en OXXO:</label>
+                    <input type="radio" name="oxxo" id="oxxo" value="oxxo"><br/><br/>
+
+                    <input type="submit" name="enviar" id="enviar" value="Enviar datos">
+            <input type="reset" name="reiniciar" id="reiniciar" value="Borrar datos"><br/></td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <h2>Practica 5</h2>
+    <h3>HTML y CSS</h3>
+    <h3>Primavera 2023</h3>
+</body>
+</html>
