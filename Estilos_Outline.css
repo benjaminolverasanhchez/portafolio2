@@ -1,0 +1,161 @@
+*{
+    background-color: bisque;
+}
+#color{
+    border: 1px solid black;
+    background-color: green;
+    width: 500px;
+    height: 25px;
+    top: 50px;
+    left: 5px;
+    color: white;
+
+    outline-color: springgreen;
+    outline-style: solid;
+}
+
+#width{
+    border: 1px solid black;
+    background-color: rgb(0, 85, 212);
+    width: 500px;
+    height: 25px;
+    top: 150px;
+    left: 5px;
+    color: white;
+
+    outline-color: rgb(0, 225, 255);
+    outline-width: 15px;
+    outline-style: solid;
+}
+
+#dotted{
+    border: 1px solid black;
+    background-color: yellow;
+    width: 400px;
+    height: 25px;
+    position: absolute;
+    top: 350px;
+    left: 5px;
+
+    outline-style: dotted;
+    outline-color: orange;
+    outline-width: 4.5px;
+}
+#dashed{
+    border: 2px solid black;
+    background-color: blue;
+    color: white; 
+    width: 400px;
+    height: 25px;
+    top: 350px;
+    left: 450px;
+    position: absolute;
+
+    outline-style: dashed;
+    outline-color: royalblue;
+    outline-width: 4.5px;
+}
+
+#solid{
+    border: 3px solid black;
+    background-color: rgb(5, 95, 0);
+    color: white; 
+    width: 400px;
+    height: 25px;
+    top: 350px;
+    left: 900px;
+    position: absolute;
+
+    outline-style: solid;
+    outline-color: greenyellow;
+    outline-width: 7px;
+}
+
+#double{
+    border: 2px solid black;
+    background-color: rgb(192, 2, 2);
+    color: white; 
+    width: 400px;
+    height: 25px;
+    top: 450px;
+    left: 5px;
+    position: absolute;
+
+    outline-style: double;
+    outline-color: rgb(255, 53, 53);
+    outline-width: 7px;
+}
+
+#groove{
+    border: 2px solid black;
+    background-color: rgb(231, 0, 227);
+    color: white; 
+    width: 400px;
+    height: 25px;
+    top: 450px;
+    left: 450px;
+    position: absolute;
+
+    outline-style: groove;
+    outline-color: rgb(255, 89, 247);
+    outline-width: 7px;
+}
+
+#ridge{
+    border: 2px solid black;
+    background-color: rgb(94, 0, 157);
+    color: white; 
+    width: 400px;
+    height: 25px;
+    top: 450px;
+    left: 900px;
+    position: absolute;
+
+    outline-style: ridge;
+    outline-color: rgb(176, 91, 255);
+    outline-width: 7px;
+}
+
+#inset{
+    border: 2px solid black;
+    background-color: gold; 
+    width: 400px;
+    height: 25px;
+    top: 550px;
+    left: 5px;
+    position: absolute;
+
+    outline-style: inset;
+    outline-color: rgb(255, 232, 99);
+    outline-width: 7px;
+}
+
+#outset{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0); 
+    color: white;
+    width: 400px;
+    height: 25px;
+    top: 550px;
+    left: 450px;
+    position: absolute; 
+    
+    outline-style: outset;
+    outline-color: gray;
+    outline-width: 7px;
+}
+
+#nombre{
+     border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(77, 0, 84); 
+    color: white;
+    width: 400px;
+    height: 25px;
+    top: 650px;
+    left: 450px;
+    position: absolute; 
+    
+    outline-style: outset;
+    outline-color: rgb(89, 255, 0);
+    outline-width: 7px;
+}
