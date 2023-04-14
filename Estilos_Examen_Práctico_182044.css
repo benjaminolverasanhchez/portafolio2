@@ -1,0 +1,96 @@
+body{
+    background-image: url('playa.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@font-face{
+    font-family: "Fuente_Crete";
+    src: url("Fuentes/Crete_Round/CreteRound-Italic.ttf") format(truetype);
+}
+@font-face{
+    font-family: "Fuente_Micro";
+    src: url("Fuentes/Michroma/Michroma-Regular.ttf") format(truetype);
+}
+
+#box{
+  border-radius: 10px;
+    background-color: white;
+    color: black;
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    font-family: 'Fuente_Crete';
+    font-size: 25px;
+    text-align: center;
+    right: 100px;
+    outline-style: outset;
+    outline-color: slategray;
+    outline-width: 2.5px;
+    
+}
+#Servicios{
+    color: white;
+    background-color: purple;
+    width: 190px;
+    height: 20px;
+    
+}
+
+#Contenido{
+    list-style: none;
+    display: none;
+    background-color:rgb(189, 119, 255);
+    padding-left: 0;
+    font-family: 'Fuente_Micro';
+    font-size: 12px;
+
+}
+
+#Servicios:hover #Contenido{
+    display: block;
+    list-style: none;
+    font-family: 'Fuente_Micro';
+    font-size: 12px;
+}
+
+
+#Servicios:hover{
+    display: block;
+    background-color: purple;
+    height: 37px;
+    list-style: none;
+    padding-left: 0;
+    
+}
+#Contenido:hover{
+    display: contents;
+    display: block;
+    background-color: rgb(189, 119, 255);
+    height: 80.5px;
+    width: 190px;
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Fuente_Micro';
+    font-size: 12px;
+
+}
+
+li:hover{
+    display: block;
+    background-color: rgb(239, 221, 255);
+    width: 190px;
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Fuente_Micro';
+    font-size: 14px;
+    font-weight: bold;
+
+
+}
+
+li a:hover{
+    font-weight: bold;
+    font-family: 'Fuente_Micro';
+    font-size: 14px;
+    padding-left: 0;
+}
