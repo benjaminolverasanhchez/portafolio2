@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones</title>
+    <script src="OperMat.js"></script>
+    <link rel="stylesheet" href="Estilos_Oper.css">
+</head>
+<body>
+    <h1>Operaciones Matemáticas</h1>
+    <form method="post" action="" enctype="text/plain">
+        <label for="Numero1">Escribe un numero:</label> <br/>
+        <input type="text" id="numero1"><br/><br/><br/>
+        <label for="Numero2">Escribe un numero:</label><br/>
+        <input type="text" id="numero2"> <br/><br/><br/>
+        <input type="button" value="Sumar" id="sumar" name="sumar" onclick="suma()">
+        <input type="button" value="Restar" id="restar" name="restar" onclick="resta()">
+        <input type="button" value="Multiplicar" id="multiplicar" name="multiplicar" onclick="multiplicacion()">
+        <input type="button" value="Dividir" id="dividir" name="dividir" onclick="division()">
+    </form>
+    <h3>El resultado es:</h3>
+    <p id="resultado" name="resultado"></p>
+</body>
+</html>

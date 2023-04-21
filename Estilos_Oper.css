@@ -1,0 +1,46 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: tan;
+}
+
+label{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+input{
+    background-color: rgb(162, 255, 128);
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 30px;
+    outline-style: outset;
+    outline-color: rgb(0, 76, 10);
+    outline-width: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    margin-left: 50px;
+}
+
+h3{
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+    font-size: 18px;
+}
