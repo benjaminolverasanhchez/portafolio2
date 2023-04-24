@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link rel="icon" type="image/jpg" href="JAMEX/JAMEX1.png"/>
+    <link rel="stylesheet" href="estilos_comentarios.css">
+    <script src="Comentariosjs.js"></script>
+</head>
+<body>
+    <h1>Sección de Comentarios</h1>
+    <h3>En esta sección comentaras algo respecto a la Página web, 
+        sus servicios del la empresa JAMEX y podrá ingresa sugerencias para leerlas y darle su debida atención </h3>
+        <p id="ingresa">Ingresa tus Comentarios:</p>
+    <section id="cajaformulario">
+        <form name="formulario">
+        <p>Comentario:<br><textarea name="comentario" id="comentario"></textarea> </p>
+        <p>Sugerencia:<br><textarea name="Sugerencia" id="Sugerencia"></textarea></p><br>
+        <p><input type="button" name="guardar" id="guardar"
+        value="Guardar"></p>
+        <p><input type="button" name="eliminar" id="eliminar"
+        value="Borrar datos" onclick="elimina()"></p>
+        </form>
+        </section>
+        <p id="text">CAJA DE COMENTARIOS</p>
+        <section id="cajadatos">
+        Aún no registras información
+        </section>
+</body>
+</html>
