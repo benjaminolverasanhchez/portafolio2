@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graficas</title>
+    <link rel="stylesheet" href="estilos_graficas.css">
+</head>
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Año', 'Muertes', 'Casos'],
+          ['2020',  149455,   1522878],
+          ['2021',  153583,   2532608],
+          ['2022',  27421,    3215083],
+          ['2023',  2320,      308911]
+        ]);
+
+        var options = {
+          title: 'Contagios por el COVID-19',
+          hAxis: {title: 'Año',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Contagios COVID-19</h1>
+    <div id="chart_div" style="width: 100%; height: 500px;"></div>
+    <p>Datos tomada por:
+    <a href=https://datos.covid-19.conacyt.mx target="_blank">Datos COVID-19<a></p>
+  </body>
+</html>

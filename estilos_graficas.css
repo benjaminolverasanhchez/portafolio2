@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(217, 194, 239);
+}
+
+@font-face{
+    font-family: "Fuente_osv";
+    src: url(Fuentes/Oswald/static/Oswald-Regular.ttf) format(truetype);
+}
+h1{
+    font-family: 'Fuente_osv';
+    text-align: center;
+    margin-bottom: 30px;
+}
+p{
+    font-family: 'Fuente_osv';
+    font-weight: lighter;
+    font-size: 15px;
+}
