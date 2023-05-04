@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="Estilos_Proyecto_Final.css">
+</head>
+<body>
+    <header id="cabecera">
+        <img src="JAMEX/JAMEX1.png" alt="logo1" height="100"   width="100" id="logo" viewBox="0 0 40 35">
+        <p>Pinturas JAMEX</p>
+        <!-- menu -->
+        <nav id="menu">
+            <ul>
+                <li><a href="Proyecto_Final.html">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="galeriaPF.html">Galeria</a></li>
+                <li><a href="#">Sucursales</a></li>
+                <li id="ayuda1"><a href="#">Ayuda</a>
+                <ul id="ayuda" class="ayuda">
+                    <li class="ayud"><a href="Preguntas_PF.html">Preguntas frecuentes</a></li>
+                     <li class="ayud"><a href="https://www.facebook.com/profile.php?id=100064851555871" target="_blank">Redes sociales</a></li>
+                     <li class="ayud"><a href="Comentarios.html">Comentarios</a></li>
+
+                </li>
+              </ul>
+              <li><a href="Contactos_PF.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <h1>Contacto</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Información del Cliente</legend>   
+            <table>
+            <tbody>
+            <tr>
+            <td><label for="nombre">Nombre</label><br/>
+            <input type="text" name="nombre" id="nombre" maxlength="18"
+            placeholder="Nombre" size="30" title="Nombre" required/><br/></td>
+
+            <td><label for="ApellidoP">Apellido Paterno:</label><br/>
+            <input type="text" name="ApellidoP" id="ApellidoP" maxlength="18"
+            placeholder="Apellido Paterno" size="30" title="ApellidoP"required/><br/></td>
+
+            <td><label for="ApellidoM">Apellido Materno:</label><br/>
+            <input type="text" name="ApellidoM" id="ApellidoM" maxlength="18"
+            placeholder="Apellido Materno" size="30" title="ApellidoM"required/></td>
+            </tr>
+            <tr>
+            <td><label for="Contraseña">Correo Electrónico</label><br/>
+            <input type="email" name="correo" id="correo" placeholder="E-mail" required></td>
+
+            <td><label for="usuario">Comentario, Queja o Sugerencia</label><br/>
+           <textarea name="CQS" id="CQS" cols="30" rows="5"></textarea></td>
+            <td><input type="submit" value="Enviar" class="enviarData" id="enviarData"></td></tr>
+            </tbody>
+            </table>
+            </fieldset>
+    </form>
+  </body>  
+</body>
+</html>
+
