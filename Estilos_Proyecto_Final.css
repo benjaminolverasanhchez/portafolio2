@@ -1,53 +1,68 @@
+@font-face{
+  font-family: "Fuente_Fira";
+  src: url("Fuentes/Fira_Sans/FiraSans-Regular.ttf") format(truetype);
+}
+
 *{
   margin: 0px;
   padding: 0px;
   margin-left: 5px;
+  font-family: 'Fuente_Fira';
 }
+
 body {
     background-image: url('JAMEX/jamex123.jpeg');
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: 100% ;
     align-content: center;
     color: rgb(0, 0, 0);
+    box-sizing: border-box;
   }
-nav{
-    font-family:'Signika Negative', sans-serif;
-    -moz-transform: translate(500px);
-    -webkit-transform: translate(500px);
-    transform: translate(500px);
-  }
+
   h1{
     font-size: 48px;
-    font-family: 'Signika Negative', sans-serif;
     text-align: center;
   }
+
   #nav1{
     text-align: center;
   }
+
   p{
     text-align: justify;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 25px;
   }
-  h2{
-    font-family: 'Signika Negative', sans-serif;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    padding: 2 20px;
+    /* background-color: rgb(255, 189, 151); */
   }
-  h3{
-    font-family: 'Signika Negative', sans-serif;
-  }
-  h4{
-    font-family: 'Signika Negative', sans-serif;
-  }
-  h5{
-    font-family: 'Signika Negative', sans-serif;
-  }
-#menu ul {
+
+  #menu ul {
+    width: 100%;
     list-style-type: none;
     /* background: rgb(255, 255, 255); */
     padding: 5px 10px;
     padding-left: 0;
     margin-left: 5px;
+    font-size: 18px;
+    justify-content: space-between;
+    display: flex;
+  }
 
+  #menu ul li a{
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+
+  }
+
+  #menu{
+    width: 60%;
   }
 
   #menu li {
@@ -59,47 +74,158 @@ nav{
     padding: 14px 16px;
     text-decoration: none;
     padding-left: 0;
+    font-size: 18px;
   }
   
 #menu li:hover {
-    background-color: #111;
+    background-color: #c710ff;
     padding-left: 0;
+    font-size: 18px;
+    border-radius: 20px;
+    
   }
 
 #ayuda1:hover #ayuda{
   display: block;
   display: inline-block;
-  background: rgb(255, 235, 235);
+  background: rgb(184, 189, 238);
   color: rgb(10, 9, 9);
   padding-left: 0;
-  margin-left: -60px;
+  margin-left: -80px;
   margin-top: 40px;
   height:200px;
-  width: 190px;
+  width: 150px;
   position: absolute;
+  font-size: 18px;
+  padding-top: 0;
+  border-radius: 20px;
 }
 
-#ayuda{
+
+
+#ayuda .ayud{
   display: none;
-  list-style: none;
-  position: absolute;
 }
+
+#ayuda1:hover #ayuda li{
+  display: block;
+  list-style: none;
+
+  font-size: 18px;
+}
+
 
 form{
   margin: 0px;
   padding: 0px;
   padding-left: 2px;
 }
+
 fieldset{
   margin-top: 60px;
 }
+
 legend{
   font-weight: bold;
   font-size: 27px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-label{
-  font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif;
+
 }
 
+label{
+  font-size: 17px;
+
+}
+
+#enviar{
+  background-color: #002fff;
+  color: white;
+  height: 30px;
+  width: 140px;
+  margin-top: 25px;
+  margin-left: 550px;
+  outline-style: inset;
+  outline-width: 5px;
+  outline-color: #000000;
+ }
+
+video{
+  width: 100%;
+}
+
+#pie{
+  border: 1px solid black;
+  margin-top: 100px;
+  background-color: rgb(252, 253, 202);
+  padding: 90px;
+  margin-left: -80px;
+  width: 100%;
+}
+
+#pie footer{
+  margin-right: -80px;
+}
+
+#imagene{
+  text-align: center;
+  font-size: 30px;
+
+}
+#texta{
+  font-size: 15px;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery li {
+  flex-basis: calc(33.33% - 20px);
+  margin: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.2);
+}
+
+#uele li{
+  list-style: none;
+  margin-top: 10px;
+}
+
+fieldset{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+td{
+  padding-left: 100px;
+}
+
+input[type=submit], #enviarData{
+  background-color: #002fff;
+  color: white;
+  height: 30px;
+  width: 100px;
+  outline-style: inset;
+  outline-width: 5px;
+  outline-color: #000000;
+ }
