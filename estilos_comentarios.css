@@ -1,23 +1,27 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    margin-left: 5px;
-    margin-top: 10px;
-    font-family: 'Fuente_Crete';
-  }
-
-  @font-face{
-    font-family: "Fuente_Crete";
-    src: url("Fuentes/Crete_Round/CreteRound-Italic.ttf") format(truetype);
+@font-face{
+  font-family: "Fuente_Fira";
+  src: url("Fuentes/Fira_Sans/FiraSans-Regular.ttf") format(truetype);
 }
 
-  body {
-      background-image: url('JAMEX/jamex123.jpeg');
-      background-repeat: no-repeat;
-      background-size: 100% ;
-      align-content: center;
-      color: rgb(0, 0, 0);
-    }
+*{
+  margin: 0px;
+  padding: 0px;
+  margin-left: 5px;
+  font-family: 'Fuente_Fira';
+}
+
+body {
+    background-image: url('JAMEX/jamex123.jpeg');
+    /* background-repeat: no-repeat; */
+    background-size: 100% ;
+    align-content: center;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+  }
+
+#namm{
+   font-size: 25px; 
+}
 
     #cajaformulario{
     float: left;
@@ -53,6 +57,7 @@
         border-radius: 4px;
         box-sizing: border-box;
     }
+
     input[type=submit] {
         width: 100%;
         background-color: #4DAFF6;
@@ -63,10 +68,12 @@
         border-radius: 4px;
         cursor: pointer;
     }
+
     input[type=submit]:hover {
         background-color: #002fff;
     }
-    div {
+
+    #text div {
         border-radius: 5px;
         background-color: #ccf9ae;
         padding: 20px;
@@ -75,6 +82,7 @@
         outline-width: 10px;
         outline-color:  #66ff00;
     }
+
     #text{
         margin-left: 500px;
         margin-top: 400px;
@@ -100,3 +108,92 @@
     outline-width: 5px;
     outline-color: #000000;
    }
+
+   h1{
+    text-align: center;
+    
+   }
+
+   header {
+    display: flex;
+    font-size: 25px;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    padding: 2 20px;
+    /* background-color: rgb(255, 189, 151); */
+  }
+
+  #menu ul {
+    width: 100%;
+    list-style-type: none;
+    /* background: rgb(255, 255, 255); */
+    padding: 5px 10px;
+    padding-left: 0;
+    margin-left: 5px;
+    font-size: 18px;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  #menu ul li a{
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+
+  }
+
+  #menu{
+    width: 60%;
+  }
+
+  #menu li {
+    display: inline-block;
+    list-style: none;
+    color: white;
+    text-align: center;
+    font: bold 20px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    padding-left: 0;
+    font-size: 18px;
+  }
+  
+#menu li:hover {
+    background-color: #c710ff;
+    padding-left: 0;
+    font-size: 18px;
+    border-radius: 20px;
+    
+  }
+
+#ayuda1:hover #ayuda{
+  display: block;
+  display: inline-block;
+  background: rgb(184, 189, 238);
+  color: rgb(10, 9, 9);
+  padding-left: 0;
+  margin-left: -80px;
+  margin-top: 40px;
+  height:200px;
+  width: 150px;
+  position: absolute;
+  font-size: 18px;
+  padding-top: 0;
+  border-radius: 20px;
+}
+
+#ayuda .ayud{
+  display: none;
+}
+
+#ayuda1:hover #ayuda li{
+  display: block;
+  list-style: none;
+
+  font-size: 18px;
+}
+
+h3{
+  text-align: center;
+}
