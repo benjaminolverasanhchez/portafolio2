@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFC</title>
+    <script src="rfc.js"></script>
+    <link rel="stylesheet" href="estilosrfc.css">
+</head>
+<body>
+    <h1>Ingresa los campos:</h1>
+    <label for="nombre1">Escribe tu Nombre</label><br/>
+    <input type="text" id="nombre" name="nombre" required maxlength="20"><br/>
+
+    <label for="AP">Escribe tu Apellido Paterno:</label><br/>
+    <input type="text" id="AP" name="AP" required maxlength="20"><br/>
+
+    <label for="AM">Escribe tu Apellido Materno:</label><br/>
+    <input type="text" id="AM" name="AM" required maxlength="20"><br/>
+
+    <label for="anio">Escribe tu año de nacimiento:</label><br/>
+    <input type="number" id="anio" name="anio" required min="1900" max="2023"><br/>
+
+    <label for="mes">Escribe tu mes de nacimiento:(numero)</label><br/>
+    <input type="number" id="mes" name="mes" required min="1" max="12"><br/>
+
+    <label for="dia">Escribe tu día de nacimiento:</label><br/>
+    <input type="number" id="dia" name="dia" required min="1" max="31"><br/>
+
+    <label for="RFC">Resultado:</label><br/>
+    <input type="text" id="RFC" name="RFC"><br/><br/><br/>
+
+    <input type="button" value="Generar RFC" id="boton" name="boton"
+    onclick="generarRFC()">
+</body>
+</html>

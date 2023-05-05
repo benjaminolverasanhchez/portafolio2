@@ -1,0 +1,41 @@
+@font-face{
+    font-family: "Fuente_Osv";
+    src: url("Fuentes/Oswald/static/Oswald-Regular.ttf") format(truetype);
+  }
+
+  *{
+    margin: 2px;
+    padding: 5px;
+    font-family: 'Fuente_Osv';
+    text-align: center;
+  }
+
+  body{
+    background-color: rgb(208, 237, 248);
+    
+  }
+
+  input{
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  input:hover{
+    border-radius: 5px;
+    outline-style: inset;
+    outline-width: 4px;
+    outline-color: blue;
+    margin-top: 10px;
+  }
+  
+  input[type=text], #RFC{
+    font-weight: bolder;
+    font-size: 15px;
+  }
+
+  input[type=button], #boton{
+    background-color: cornflowerblue;
+    border-color: darkgoldenrod;
+    width: 500px;
+    height: 40px;
+  }
