@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Geolocation</title>
+    <script>
+        function obtenerUbicacion(){
+            //verifica si el navegador del usuario soporta la API de
+            //geolocalización web
+            if(navigator.geolocation){
+                //Si el navegador del usuario soporta la API obtiene 
+                //la ubicación actual del usuario
+                navigator.geolocation.getCurrentPosition(function(posicion){
+                    //Almacena la latitud y longitud del usuario en variables
+                    var latitud = posicion.coords.latitude;
+                    var longitud = posicion.coords.longitude;
+                    
+                    //muestra un mensaje con la ubicacion actual del 
+                    //usario
+                    alert('Tu ubicación actual es: ' + latitud + ', ' + longitud);
+                });
+            }else{
+                //si el navegador no soporta la API
+                alert('Tu naveagador no soporta la Web Geolocation API')
+            }
+        }
+    </script>
+    <style>
+        @font-face{
+            font-family: "Fuente_Osv";
+            src: url("Fuentes/Rubik/static/Rubik-ExtraBold.ttf") format(truetype);
+                 }
+        *{
+        margin: 2px;
+        padding: 5px;
+        font-family: 'Fuente_Osv';
+        text-align: center;
+        background-color:darkseagreen;
+        margin-top: 10px;
+        }
+
+        h1{
+            margin-top: 2   0px;
+        }
+
+        p{
+            margin-top: 30px;
+        }
+
+        input[type=button], #obtenerUbicacion{
+            background-color: goldenrod;
+            margin-top: 100px;
+            outline-style: inset;
+            outline-color: navy;
+            outline-width: 3px;
+
+        }
+
+        #mundo{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            margin-left: -700px;
+            margin-top: -120px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Ubicación</h1>
+
+    <p>Haz clic para obtener tu ubicacion actual:</p>
+
+    <input type="button" value="Obtener Ubicacion" id="obtenerUbicacion" 
+    name="obtenerUbicacion" onclick="obtenerUbicacion()">
+
+    <img src="Mundo/mundo.webp" alt="mundo" id="mundo">
+
+</body>
+</html>
