@@ -1,0 +1,27 @@
+@font-face{
+    font-family: "Fuente_osv";
+    src: url(Fuentes/Oswald/static/Oswald-Regular.ttf) format(truetype);
+}
+
+*{
+    background-color: lightcyan;
+    font-family: 'Fuente_osv';
+}
+h1, h3, p, form{
+    text-align: center;
+}
+input[type=button], #enviar{
+    border-radius: 30px;
+    border-color: rgb(255, 72, 72);
+    outline-style:unset;
+    outline-width: 5px;
+    outline-color: blue;
+}
+
+input{
+    border-radius: 30px;
+    border-color: rgb(255, 72, 72);
+    outline-style:unset;
+    outline-width: 5px;
+    outline-color: blue; 
+}

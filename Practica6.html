@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API WEB FORM</title>
+    <link rel="stylesheet" href="estilosp6.css">
+    <script>
+    function myFunction() {
+        const inpObj = document.getElementById("edad1");
+        if (!inpObj.checkValidity()) {
+          document.getElementById("demo").innerHTML = inpObj.validationMessage;
+        } else {
+          document.getElementById("demo").innerHTML = "Edad correcta";
+        } 
+    }
+        function myFunction() {
+        const inpObj = document.getElementById("phone");
+        if (!inpObj.checkValidity()) {
+          document.getElementById("demo1").innerHTML = inpObj.validationMessage;
+        } else {
+          document.getElementById("demo1").innerHTML = "Telefono correcto";
+        } 
+      } 
+    </script>
+</head>
+<body>
+    <h1>API WEB FORM</h1>
+    <p>Con la API Forms con validaciones, debes crear un formulario de registro o ingreso de datos, 
+        configurarlo para que se integre con la API Forms, establecer las validaciones necesarias y realizar pruebas exhaustivas 
+        para asegurarte de que todo esté funcionando correctamente.</p>
+    <h3>Implementación</h3>
+    <ul>
+        <li>Primero, debes tener conocimientos básicos de programación y de cómo trabajar con una API.</li>
+        <li>Luego, debes revisar la documentación de la API Forms para familiarizarte con su estructura y su funcionamiento.</li>
+        <li>Una vez que hayas comprendido la documentación, debes crear un formulario de registro o de ingreso de datos en tu sitio web o aplicación, y configurarlo para que se integre con la API Forms.</li>
+        <li>Asegúrate de que el formulario tenga todas las validaciones necesarias para garantizar que los usuarios ingresen los datos correctos y válidos.</li>
+        <li>Después de crear el formulario, debes conectarlo a la API Forms y configurar las validaciones de los campos de entrada. Por ejemplo, si el usuario ingresa una dirección de correo electrónico inválida, la API debe mostrar un mensaje de error para que el usuario pueda corregir el error.</li>
+        <li>Finalmente, debes realizar pruebas exhaustivas para asegurarte de que la API Forms esté funcionando correctamente y de que los datos ingresados por los usuarios sean válidos y seguros.</li>
+    </ul>
+    <h3>Importancia</h3>
+    <p>Su importancia radica en que permite la validación de datos ingresados en formularios web de manera rápida y eficiente, evitando que se ingresen datos incorrectos o incompletos. 
+        Esto es fundamental para garantizar la calidad de la información almacenada en las bases de datos, lo que a su vez permite la toma de decisiones más informadas y precisas. 
+        Además, la validación de datos a través de una API es mucho más segura y confiable que hacerlo de manera manual, reduciendo el riesgo de errores y vulnerabilidades en la aplicación.</p>
+
+    <h3>Utilidad</h3>
+    <form id="my-form" action="" method="post">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad1" name="edad1" min="1" max="99" required><br><br>
+        <p id="demo"></p>
+
+        <label for="phone">Teléfono:</label><br>
+        <input type="number" id="phone" name="phone" min="4000000000" max="4999999999" ><br>
+        <p id="demo1"></p>
+
+        <button type="submit" onclick="myFunction()" id="enviar">Enviar</button>
+    </form>
+</body>
+</html>
