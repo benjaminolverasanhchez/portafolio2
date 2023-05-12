@@ -1,0 +1,43 @@
+@font-face{
+    font-family: "Fuente_rub";
+    src: url(Fuentes/Rubik/static/Rubik-Medium.ttf) format(truetype);
+}
+*{
+    font-family: 'Fuente_rub';
+    background-color: rgb(191, 246, 213);
+}
+
+h1,h2{
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+ iframe{
+    margin-left: 350px;
+ }
+
+ input[type=button]{
+    /* height: 60px;
+    margin-left: 10px;
+    padding: 20px;
+    background-color: yellow; */
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+ }
+ input[type=button]:hover{
+    background-color: #3e8e41;
+ }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Matemáticas</title>
+    <!-- <link rel="stylesheet" href="estilos.css"> -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="estilosp7.css">
+</head>
+<script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="jspdf.js"></script>
+<script type="text/javascript" src="jspdf.plugin.addimage.js"></script>
+<script type="text/javascript" src="jspdf.plugin.standard_fonts_metric.js"></script>
+<script type="text/javascript" src="jspdf.plugin.split_text_to_size.js"></script>
+<script type="text/javascript" src="jspdf.plugin.from_html.js"></script>
+
+
+<script>
+var total;
+function califica()//funcion al momento de dar click 
+    {var total=0;//el acumulador que empiece desde cero
+    	for (var x=1;x<=6;x++)//generan las 4 preguntas para que...
+    	{
+        var res=0;//el resultado empieze desde 0 para que este sume el puntaje de cada respuesta
+        var nom="r"+x;//el nombre se genera con el mismo for ya que en el html se tiene como nombre "r1" y "r2" asi hasta llegar al "r4"
+        var resul=document.getElementsByName(nom);//resul toma el valor del nombre
+        for(var i=0;i<resul.length;i++)
+        {
+            if(resul[i].checked==true)//si el resultado es verdadero se cumple el siguente paso
+                res=parseInt(resul[i].value);//se acumulan los puntajes dados por el html "en este caso 5 y tres 0"
+        }
+        total=total+res;//se suman el puntaje obtenido
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+        if(total==30)
+        	document.getElementById("comentario").innerHTML="MUY BIEN, sigue así!!";
+        else
+        	if(total==15 && total<30)
+        	document.getElementById("comentario").innerHTML="Regular";
+        else
+        	if(total<15)
+        	document.getElementById("comentario").innerHTML="Estudia un poco más:)";
+    }
+	function generar(){
+	//Crear un objeto o instancia jsPDF
+	var doc = new jsPDF();
+
+	//Definir el tamaño de la letra
+	doc.setFontSize(40);
+	//Color del texto
+	doc.setTextColor(9,7,121);
+	doc.text(40, 20, "Conceptos basicos");
+	doc.setTextColor(17, 122, 209); //Color en formato RGB
+	doc.setFontSize(30);
+	doc.text(50, 35, "Resultados del test"); //Ubicación, Texto
+	doc.setTextColor(0,0,0);
+	doc.setFontSize(10);
+	doc.text(20, 50, "20 puntos. Muy bien. \r Todas tus respuestas son correctas");
+	doc.text(20, 70, "15 puntos. Regular. \r Obtuviste 3 preguntas correctas");
+	doc.text(20, 90, "10 puntos. Regular. \r Obtuviste 2 preguntas correctas");
+	doc.text(20, 110, "5 puntos. \r Obtuviste 1 pregunta correcta");
+	doc.text(20, 130, "0 puntos. \r Todas tus respuestas son incorrectas");
+
+	//doc.addImage(imgData, 'JPEG', 10, 40, 180, 180);
+
+	var string = doc.output('datauristring');
+
+	$('iframe').attr('src', string);
+	}
+</script>
+
+<body>
+    <div id="contiene">
+	<h1>Sumas, Restas, Multiplicaciones y Divisiones</h1>
+	<h2>Responde las siguentes preguntas</h2>
+<form>
+<div>
+	
+	<ul>
+
+		<li>Suma: ¿Cuánto es 84 + 39?</li>
+		<input type="radio" name="r1" id="r1" value="5"/>123<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>115<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>137<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>133<br/>
+		
+		<li>Resta: ¿Cuánto es 765 - 389?</li>
+		<input type="radio" name="r2" id="r2" value="0"/>389<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>400<br/>
+		<input type="radio" name="r2" id="r2" value="5"/>367<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>407<br/>
+
+		<li>Multpilicación: ¿Cuánto es 66 x 15?</li>
+		<input type="radio" name="r3" id="r3" value="0"/>975<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>850<br/>
+		<input type="radio" name="r3" id="r3" value="5"/>990<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>925<br/>
+
+        <li>División: ¿Cuánto es 456 / 8?</li>
+		<input type="radio" name="r4" id="r4" value="0"/>62<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>56.5<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>66<br/>
+		<input type="radio" name="r4" id="r4" value="5"/>57<br/>
+        
+        <li>Suma de fracciones: ¿Cuánto es 1/2 + 3/4?</li>
+		<input type="radio" name="r5" id="r5" value="0"/>1/2<br/>
+		<input type="radio" name="r5" id="r5" value="5"/>5/4<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>3/2<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>5/3<br/>
+
+        <li>División: ¿Cuánto es 9/7 - 5/7 </li>
+		<input type="radio" name="r6" id="r6" value="0"/>3/7<br/>
+		<input type="radio" name="r6" id="r6" value="5"/>4/7<br/>
+		<input type="radio" name="r6" id="r6" value="0"/>5/7<br/>
+		<input type="radio" name="r6" id="r6" value="0"/>2/7<br/>
+	</ul>
+	
+</div>
+<input type="button" value="Calificar" onclick="califica()">
+<input type="button" value="Generar PDF" onclick="generar()">
+</form>
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</body>
+</html>
