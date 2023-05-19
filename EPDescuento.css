@@ -1,0 +1,31 @@
+@font-face{
+    font-family: "FuenteX";
+    src: url(Fuentes/Oswald/static/Oswald-Light.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+}
+
+body{
+    font-family: 'FuenteX';
+    background-color: rgb(175, 238, 206);
+}
+
+h1, label, input, p{
+    margin-top: 2%;
+}
+
+input[type="button"]{
+    width: 100%;
+    background-color: rgb(109, 184, 109);
+    color: white;
+    height: 40px;
+}
+
+input[type="text"]{
+    width: 50%;
+}
