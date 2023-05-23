@@ -9,19 +9,105 @@
   margin-left: 5px;
   font-family: 'Fuente_Fira';
 }
+p{
+  text-align: justify;
+  font-size: 25px;
+}
 
 body {
-    background-image: url('JAMEX/jamex123.jpeg');
+  background-image: url('JAMEX/Shiny\ Overlay.svg');
     /* background-repeat: no-repeat; */
     background-size: 100% ;
     align-content: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     box-sizing: border-box;
   }
 
-#namm{
+  header {
+    display: flex;
+    font-size: 25px;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    padding: 2 20px;
+    /* background-color: rgb(255, 189, 151); */
+    font-size: 18px;
+  }
+
+  #menu ul {
+    width: 100%;
+    list-style-type: none;
+    /* background: rgb(255, 255, 255); */
+    padding: 5px 10px;
+    padding-left: 0;
+    margin-left: 5px;
+    font-size: 18px;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  #menu ul li a{
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+
+  }
+
+  #menu{
+    width: 70%;
+    font-size: 18px;
+  }
+
+  #menu li {
+    display: inline-block;
+    list-style: none;
+    color: white;
+    text-align: center;
+    font: bold 20px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    padding-left: 0;
+    font-size: 18px;
+  }
+  
+#menu li:hover {
+    background-color: #c710ff;
+    padding-left: 0;
+    font-size: 18px;
+    border-radius: 20px;
+    
+  }
+
+#ayuda1:hover #ayuda{
+  display: block;
+  display: inline-block;
+  background: rgb(184, 189, 238);
+  color: rgb(10, 9, 9);
+  padding-left: 0;
+  margin-left: -80px;
+  margin-top: 40px;
+  height:200px;
+  width: 150px;
+  position: absolute;
+  font-size: 18px;
+  padding-top: 0;
+  border-radius: 20px;
+  }
+
+  #ayuda .ayud{
+  display: none;
+  }
+
+  #ayuda1:hover #ayuda li{
+  display: block;
+  list-style: none;
+  font-size: 18px;
+  }
+
+  #namm{
    font-size: 25px; 
-}
+  }
 
     #cajaformulario{
     float: left;
@@ -34,8 +120,8 @@ body {
     width: 400px;
     margin-left: 400px;
     padding: 20px;
-    background-color: rgb(8, 196, 8);
-    border: 5px solid #006605;
+    background-color: rgb(8, 83, 196);
+    border: 5px solid #030066;
     margin-top: 50px;
     }
 
@@ -46,6 +132,144 @@ body {
     #cajadatos > div{
     padding: 5px;
     border-bottom: 1px solid #000000;
+    }
+    .enviarData{
+      width: 140px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0px 15px;
+      background-color: red;
+      border-radius: 10px;
+      border: none;
+      color: white;
+      position: relative;
+      cursor: pointer;
+      font-weight: 900;
+      transition-duration: .2s;
+      background: linear-gradient(0deg, #000, #272727);
+    }
+    
+    .enviarData:before, .enviarData:after {
+      content: '';
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      border-radius: 10px;
+      background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+        #0000ff, #00ff00,#ffff00, #ff0000);
+      background-size: 400%;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      z-index: -1;
+      animation: steam 20s linear infinite;
+    }
+    
+    @keyframes steam {
+      0% {
+        background-position: 0 0;
+      }
+    
+      50% {
+        background-position: 400% 0;
+      }
+    
+      100% {
+        background-position: 0 0;
+      }
+    }
+    
+    .enviarData:after {
+      filter: blur(50px);
+    }
+    .container {
+      position: relative;
+      width: 250px;
+     /*  choose your size */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .container button {
+      width: 50px;
+      height: 50px;
+      border: none;
+      background-color: #313638;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    
+    .icon {
+      width: 26px;
+      height: 26px;
+      fill: #fff;
+    }
+    
+    .container button:nth-child(1):hover {
+      background-color: #2753a7;
+    }
+    
+    .container button:nth-child(2):hover {
+      background-color: #cd242b;
+    }
+    
+    .container button:nth-child(3):hover {
+      background-color: #55acee;
+    }
+    
+    .container button:nth-child(4):hover {
+      background-color: #0274b3;
+    }
+    
+    .IG{
+      background: transparent;
+      position: relative;
+      padding: 5px 15px;
+      display: flex;
+      align-items: center;
+      font-size: 17px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      outline: none;
+      overflow: hidden;
+      color: white;
+      transition: color 0.3s 0.1s ease-out;
+      text-align: center;
+    }
+    
+    
+    .IG::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      content: '';
+      display: block;
+      width: 20em;
+      height: 20em;
+      left: -5em;
+      text-align: center;
+      transition: box-shadow 0.5s ease-out;
+      z-index: -1;
+    }
+    
+    .IG:hover {
+      color: #fff;
+    }
+    
+    .IG:hover::before {
+      box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+    }
+  
+    
+    footer{
+      margin-top: 150px;
     }
     
     input[type=text], select {
@@ -109,91 +333,10 @@ body {
     outline-color: #000000;
    }
 
-   h1{
+  h1{
     text-align: center;
     
    }
-
-   header {
-    display: flex;
-    font-size: 25px;
-    justify-content: space-between;
-    margin-top: 10px;
-    align-items: center;
-    padding: 2 20px;
-    /* background-color: rgb(255, 189, 151); */
-  }
-
-  #menu ul {
-    width: 100%;
-    list-style-type: none;
-    /* background: rgb(255, 255, 255); */
-    padding: 5px 10px;
-    padding-left: 0;
-    margin-left: 5px;
-    font-size: 18px;
-    justify-content: space-between;
-    display: flex;
-  }
-
-  #menu ul li a{
-    padding: 10px;
-    text-decoration: none;
-    list-style: none;
-
-  }
-
-  #menu{
-    width: 60%;
-  }
-
-  #menu li {
-    display: inline-block;
-    list-style: none;
-    color: white;
-    text-align: center;
-    font: bold 20px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 14px 16px;
-    text-decoration: none;
-    padding-left: 0;
-    font-size: 18px;
-  }
-  
-#menu li:hover {
-    background-color: #c710ff;
-    padding-left: 0;
-    font-size: 18px;
-    border-radius: 20px;
-    
-  }
-
-#ayuda1:hover #ayuda{
-  display: block;
-  display: inline-block;
-  background: rgb(184, 189, 238);
-  color: rgb(10, 9, 9);
-  padding-left: 0;
-  margin-left: -80px;
-  margin-top: 40px;
-  height:200px;
-  width: 150px;
-  position: absolute;
-  font-size: 18px;
-  padding-top: 0;
-  border-radius: 20px;
-}
-
-#ayuda .ayud{
-  display: none;
-}
-
-#ayuda1:hover #ayuda li{
-  display: block;
-  list-style: none;
-
-  font-size: 18px;
-}
-
-h3{
+  h3{
   text-align: center;
-}
+  }
