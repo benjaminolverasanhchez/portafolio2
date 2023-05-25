@@ -37,6 +37,7 @@ body {
 
   header {
     display: flex;
+    flex-wrap:wrap;
     justify-content: space-between;
     margin-top: 10px;
     align-items: center;
@@ -44,7 +45,15 @@ body {
     /* background-color: rgb(255, 189, 151); */
     font-size: 18px;
   }
-
+  @media screen and (max-width: 600px) {
+    .menu {
+      flex-direction: column;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+    }
+  }
   #menu ul {
     width: 100%;
     list-style-type: none;
@@ -509,8 +518,8 @@ p{
 }
 
 #suc12{
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 400px;
 }
 
 iframe{
@@ -518,5 +527,44 @@ iframe{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-left: 400px;
+  margin-top: 20px;
+  margin-left: 0px;
 }
+
+.gallery2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery2 li {
+  flex-basis: calc(33.33% - 20px);
+  margin: 5px;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery2, .suc1, .suc12 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-out;
+}
+
+.gallery2 img:hover {
+  transform: scale(1.2);
+}
+
