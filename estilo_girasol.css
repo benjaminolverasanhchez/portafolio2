@@ -1,0 +1,107 @@
+@font-face{
+    font-family: "Fuente_osv";
+    src: url(Fuentes/Oswald/static/Oswald-Regular.ttf) format(truetype);
+}
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-image: url('imagenes/nube.jpg');
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Fuente_osv';
+    text-align: center;
+}
+
+.sunflower {
+    width: 200px;
+    height: 300px;
+    position: relative;
+}
+
+.center-circle {
+    background-color: #8b4513; /* Marrón */
+    width: 140px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    top:  320px;
+    left: 30px;
+    z-index: 1;
+}
+
+.branch {
+    background-color: #21b300; /* Marrón */
+    width: 15px;
+    height: 220px;
+    position: absolute;
+    top: 599px; /* Ajusta la posición vertical */
+    left: 95px;
+    transform-origin: 100% 0; /* Cambia el punto de rotación */
+    transform: rotate(0deg); /* Ajusta el ángulo de rotación */
+    z-index: -1; /* Coloca la rama detrás de los pétalos */
+}
+
+
+
+.petals {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.petal {
+    background-color: #ffcc29; /* Amarillo */
+    width: 100px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    transform-origin: 50% 100%;
+}
+
+.petal:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.petal:nth-child(2) {
+    transform: rotate(60deg);
+}
+
+.petal:nth-child(3) {
+    transform: rotate(120deg);
+}
+
+.petal:nth-child(4) {
+    transform: rotate(180deg);
+}
+
+.petal:nth-child(5) {
+    transform: rotate(240deg);
+}
+
+.petal:nth-child(6) {
+    transform: rotate(300deg);
+}
+
+.text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    top: 240px;
+    left: 80px;
+}
